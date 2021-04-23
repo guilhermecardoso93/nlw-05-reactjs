@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Head from 'next/head';
 import Image from 'next/image'
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 import { format, parseISO } from "date-fns";
 import ptBr from 'date-fns/locale/pt-BR';
 import { api } from "../../services/api";
@@ -63,13 +64,14 @@ export default function Episode ({episode}: EpisodeProps) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [],
+    paths:[],
     fallback: 'blocking'
   }
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params;
+
   const {data} = await api.get(`/episodes/${slug}`); 
 
   const episode = {
