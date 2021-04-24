@@ -3,8 +3,8 @@
   width:26.5rem;
   height:100vh;
 
-  background:var(--purple-500);
-  color: var(--white);
+  background:linear-gradient( to bottom left,  #9F75FF, #6F48C9, #4B0082 );
+   color: var(--white);
 
   display:flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
     footer {
       align-items: stretch;
 
-      & .empty {
+      & .empty.process {
         opacity: 0.5;
       }
     }
@@ -58,7 +58,7 @@
   height:20rem;
   border: 1.5px dashed var(--purple-300);
   border-radius:1.5rem;
-  background: linear-gradient(143.8deg rgba(145, 100, 250, 0.8) 8%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(143.8deg rgba(33, 230, 98, 0.8) 8%, rgba(0, 0, 0, 0) 100%);
 
   padding:4rem;
   text-align:center;
@@ -113,6 +113,14 @@
 
     &:hover:not(:disabled) {
       filter: brightness(0.7)
+    }
+
+    &.isActive {
+      filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
+    }
+
+    &.isActive:hover {
+      filter: brightness(0.6) invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
     }
 
     &.playButton {

@@ -1,5 +1,5 @@
 .headerContainer {
-  background: var(--white);
+  background:linear-gradient( to bottom right,  #101111, #1f2124, #07a16e, );
   height: 6.5rem;
 
   display: flex;
@@ -7,16 +7,18 @@
 
   padding: 2rem 4rem;
 
-  border-bottom: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--white);
 
   p {
+    color:var(--white);
     margin-left: 2rem;
     padding: 0.25rem 0 0.25rem 2rem;
-    border-left: 1px solid var(--gray-100);
+    border-left: 1px solid var(--white);
   }
 
   span {
     margin-left: auto;
     text-transform: capitalize;
+    color:var(--white);
   }
 }

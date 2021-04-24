@@ -1,11 +1,12 @@
 .homepage {
-  padding: 0 4rem;
+  padding: 0 2rem;
   height: calc(100vh - 6.5rem);
   overflow-y: scroll;
+  background:linear-gradient( to top right,  #F7F8FA, #E6E8EB, #AFB2B1, );
 
   h2 {
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -17,11 +18,12 @@
     gap: 1.5rem;
 
     li {
-      background: var(--white);
+      background:linear-gradient( to bottom left,  #9F75FF, #ad92ee, #d7bbeb );
       border: 1px solid var(--gray-100);
       padding: 1.25rem;
       border-radius: 1.5rem;
       position: relative;
+      color: var(--white);
 
       display: flex;
       align-items: center;
@@ -38,7 +40,7 @@
 
         a {
           display: block;
-          color: var(--gray-800);
+          color: var(--white);
           font-family: Lexand, sans-serif;
           font-weight: 600;
           text-decoration: none;
@@ -90,7 +92,7 @@
 
         width: 2.5rem;
         height: 2.5rem;
-        background: var(--white);
+        background:linear-gradient( to top right,  #F7F8FA, #E6E8EB, #AFB2B1, );
         border: 1px solid var(--gray-100);
         border-radius: 0.675rem;
         font-size: 0;
@@ -121,13 +123,14 @@
     }
 
     th {
-      color: var(--gray-200);
+      color: var(--gray-800);
       text-transform: uppercase;
       font: 500 0.75rem Lexand, sans-serif;
       text-align: left;
     }
 
     td {
+      color: var(--gray-800);
       font-size: 0.875rem;
       
       img { 
@@ -152,8 +155,8 @@
       button {
         width: 2rem;
         height: 2rem;
-        background: var(--white);
-        border: 1px solid var(--gray-100);
+        background:linear-gradient( to top right,  #F7F8FA, #E6E8EB, #eaf0ee, );
+        border: 1px solid var(--gray-500);
         border-radius: 0.5rem;
         font-size: 0;
         transition: filter 0.2s;
